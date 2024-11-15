@@ -17,7 +17,25 @@ pip install winzy-notify
 ```
 ## Usage
 
-Usage instructions go here.
+To notify using this plugin, you can run the following command:
+```bash
+winzy notify [-t <title>] <message>
+```
+
+Where `<title>` is an optional parameter that specifies the title of the notification. If not provided, it defaults to "Notify".
+
+Example usage:
+```bash
+winzy notify -t "Hello World" "This is a test message."
+```
+
+Even pipes work.
+
+```bash
+llm -s "Tell me a Joke" | winzy notify 
+```
+
+This will show the joke as notification.
 
 ## Development
 
